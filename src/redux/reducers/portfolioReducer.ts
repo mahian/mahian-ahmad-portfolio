@@ -1,9 +1,15 @@
 import { ActionTypes } from "../constants/action-types";
 const intialState = {
   portfolios: [
-    {},
-    {},
-    {},
+    {
+      thumbnail: "assets/images/portfolio/1.jpg"
+    },
+    {
+      thumbnail: "assets/images/portfolio/2.jpg"
+    },
+    {
+      thumbnail: "assets/images/portfolio/3.jpg"
+    },
   ],
 };
 

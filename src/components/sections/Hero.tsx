@@ -1,43 +1,52 @@
-import React from 'react';
+import React, { useState } from "react";
 
 const Hero = () => {
     return (
-        <section className="py-24 bg-white">
-            <div className="px-12 mx-auto max-w-7xl">
-                <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-                    <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-                        <span>{"I'm"}</span> <span className="block w-full py-2 leading-12 text-primary lg:inline">Mahian Ahmad</span> <br /> <span>passionate front end developer</span>
-                    </h1>
-                    <p className="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24">
-                        {"Start gaining the traction you've always wanted with our next-level templates and designs. Crafted to help you tell your story."}
-                    </p>
-                    <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                        <a href="#_" className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-green-400 rounded-2xl sm:w-auto sm:mb-0">
-                            Get Started
-                            <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </a>
-                        <a href="#_" className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg bg-gray-100 rounded-2xl sm:w-auto sm:mb-0">
-                            Learn More
-                            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-                        </a>
-                    </div>
+        <>
+            <div className="relative w-full min-h-screen flex pb-10">
+                <div className="hidden md:block">
+                    <img className="absolute bg-cover bg-center w-full h-full object-cover inset-0" src="assets/images/background.jpg" />
                 </div>
-                <div className="w-full mx-auto mt-20 text-center md:w-10/12">
-                    <div className="relative z-0 w-full mt-8">
-                        <div className="relative overflow-hidden shadow-2xl">
-                            <div className="flex items-center flex-none px-4 bg-green-400 rounded-b-none h-11 rounded-xl">
-                                <div className="flex space-x-1.5">
-                                    <div className="w-3 h-3 border-2 border-white rounded-full"></div>
-                                    <div className="w-3 h-3 border-2 border-white rounded-full"></div>
-                                    <div className="w-3 h-3 border-2 border-white rounded-full"></div>
-                                </div>
-                            </div>
-                            <img src="https://cdn.devdojo.com/images/march2021/green-dashboard.jpg" />
+                <div className="relative px-4 xl:px-0 container mx-auto md:flex items-center gap-8">
+                    <div className="text-color w-full md:w-1/3 pt-16 lg:pt-32 xl:pt-12">
+                        <h1 className="text-4xl md:text-4xl lg:text-6xl w-11/12 lg:w-11/12 xl:w-full xl:text-6xl text-gray-900 font-extrabold f-f-l">Hi <br /> I am Mahian</h1>
+                        <p className="text-2xl w-11/12 lg:w-11/12 xl:w-full text-gray-600 font-semibold">Front End Developer</p>
+                        <div className="f-f-r text-base lg:text-base pb-20 sm:pb-0 pt-10 xl:pt-6">
+                            <h2>The next big thing starts here. Start building with Prodify and be the first to market with a product that is ready to take on the competition and delight your customers</h2>
+                        </div>
+                        <div className="lg:flex">
+                            <button className="hidden md:block hover:opacity-90 text-base w-full xl:text-base xl:w-6/12 mt-4 xl:mt-8 f-f-r py-4  bg-primary text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary rounded-lg">Start building now</button>
+                            <button className="hidden md:block hover:opacity-90 text-base w-full xl:text-base xl:w-4/12 lg:ml-2 xl:ml-2 mt-4 xl:mt-8 f-f-r py-4  bg-indigo-200 text-indigo-600 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary rounded-lg">Try it out</button>
                         </div>
                     </div>
+                    <img className="w-full md:hidden mt-8 md:mt-0 object-fill md:w-2/3 md:-ml-4 lg:-ml-4 xl:ml-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Graphic.png" alt="sample page" role="img" />
+                    <button className="md:hidden hover:opacity-90 text-base w-full xl:text-base xl:w-6/12 mt-4 xl:mt-8 f-f-r py-4  bg-primary text-white font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary rounded-lg">Start building now</button>
+                    <button className="md:hidden hover:opacity-90 text-base w-full xl:text-base xl:w-4/12 xl:ml-2 mt-4 xl:mt-8 f-f-r py-4  bg-indigo-200 text-indigo-600 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary rounded-lg">Try it out</button>
                 </div>
             </div>
-        </section>
+
+
+            <style>{`
+        .top-100 {
+            animation: slideDown .5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -50%;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
+        * {
+            outline: none !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: transparent;
+        } `}</style>
+        </>
     );
 };
 
