@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "1",
+        "name": "Curry Kingdom",
+        "thumbnail": "assets/images/portfolio/4.jpg",
+        "subtitle": "Restaurant website",
+        "liveLink": "https://currykingdom.netlify.app/"
+    },
+    {
+        "_id": "2",
+        "name": "Learning deck",
+        "thumbnail": "assets/images/portfolio/2.jpg",
+        "subtitle": "learning website to buy courses",
+        "liveLink": "https://learning-deck.web.app/"
+    },
+    {
+        "_id": "3",
+        "name": "Dua and ruqyah",
+        "thumbnail": "assets/images/portfolio/duaruqyah.jpg",
+        "subtitle": "Dua Islamic website",
+        "liveLink": "https://startling-belekoy-7985af.netlify.app/"
+    },
+    {
+        "_id": "4",
+        "name": "Shift Lawyer",
+        "thumbnail": "assets/images/portfolio/3.jpg",
+        "subtitle": "Lawyer service website.",
+        "liveLink": "https://shift-lawyer.web.app/"
+    }
+]
