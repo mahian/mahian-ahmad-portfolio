@@ -1,22 +1,14 @@
 import React from 'react';
+import SectionTitle from '../utills/SectionTitle';
 
 const Contact = () => {
   return (
     <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5">
         <div className="-mx-4 flex flex-wrap lg:justify-between">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
             <div className="mb-12 max-w-[570px] lg:mb-0">
-              <h2
-                className="text-dark mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
-              >
-                GET IN TOUCH WITH US
-              </h2>
-              <p className="text-body-color mb-9 text-base leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim adiqua
-                minim veniam quis nostrud exercitation ullamco
-              </p>
+              <SectionTitle>Get in touch</SectionTitle>
               <div className="mb-8 flex w-full max-w-[370px]">
                 <div
                   className="bg-blue-500 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]"
@@ -33,9 +25,9 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-dark mb-1 text-xl font-bold">Our Location</h4>
+                  <h4 className="text-dark mb-1 text-xl font-bold">Location</h4>
                   <p className="text-body-color text-base">
-                    99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                    Kauniya branch road, barishal, bangladesh
                   </p>
                 </div>
               </div>
@@ -62,7 +54,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full">
                   <h4 className="text-dark mb-1 text-xl font-bold">Phone Number</h4>
-                  <p className="text-body-color text-base">(+62)81 414 257 9980</p>
+                  <p className="text-body-color text-base">(+880)1706 988476</p>
                 </div>
               </div>
               <div className="mb-8 flex w-full max-w-[370px]">
@@ -82,7 +74,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full">
                   <h4 className="text-dark mb-1 text-xl font-bold">Email Address</h4>
-                  <p className="text-body-color text-base">info@yourdomain.com</p>
+                  <p className="text-body-color text-base">mahianahmad9@gmail.com</p>
                 </div>
               </div>
             </div>

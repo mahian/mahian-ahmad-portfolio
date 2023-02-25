@@ -46,7 +46,7 @@ const Services = () => {
                             <div key={index} className="xl:w-1/3 md:w-1/2 p-4 cursor-pointer group">
                                 <div className="bg-white hover:bg-primary hover:text-white shadow-md p-6 rounded-lg">
                                     <div className='text-primary group-hover:text-white'>{icon}</div>
-                                    <h2 className="text-lg text-gray-900 group-hover:text-white font-medium title-font mb-2">{title}</h2>
+                                    <h2 className="text-2xl text-gray-900 group-hover:text-white font-medium title-font mb-2">{title}</h2>
                                     <p className="leading-relaxed text-base">{desc}</p>
                                 </div>
                             </div>
