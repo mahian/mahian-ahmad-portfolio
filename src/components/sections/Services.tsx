@@ -36,18 +36,21 @@ const Services = () => {
         },
     ]
     return (
-        <section id='services' className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
+        <section id='services'>
+            <div className="container px-5 pb-20 mx-auto">
                 <SectionTitle>Services</SectionTitle>
                 <div className="flex flex-wrap -m-4">
                     {servicesData.map((service, index) => {
-                        const {title, desc, icon} = service;
+                        const { title, desc, icon } = service;
                         return (
-                            <div key={index} className="xl:w-1/3 md:w-1/2 p-4 cursor-pointer group">
-                                <div className="bg-white hover:bg-primary hover:text-white shadow-md p-6 rounded-lg">
+                            <div key={index} className="xl:w-1/3 md:w-1/2 p-4 cursor-pointer">
+                                <div className="bg-white group hover:bg-primary hover:text-white shadow-md p-6 rounded-lg">
                                     <div className='text-primary group-hover:text-white'>{icon}</div>
                                     <h2 className="text-2xl text-gray-900 group-hover:text-white font-medium title-font mb-2">{title}</h2>
-                                    <p className="leading-relaxed text-base">{desc}</p>
+                                    <p className="leading-relaxed text-base">{desc.length > 150 ? desc.slice(0, 150) : desc }
+                                    <button className='text-yellow-500'>Show more</button>
+                                    </p>
+
                                 </div>
                             </div>
                         )

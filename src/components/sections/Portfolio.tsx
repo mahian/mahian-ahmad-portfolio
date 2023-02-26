@@ -12,7 +12,7 @@ const Portfolio = () => {
   }, []);
   return (
     <section className="text-gray-600 body-font" id='portfolio'>
-      <div className="py-24 mx-auto">
+      <div className="pb-20 mx-auto">
         <div className='container mx-auto px-5 '>
           <SectionTitle>portfolio</SectionTitle>
         </div>

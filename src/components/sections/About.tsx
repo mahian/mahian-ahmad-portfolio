@@ -6,8 +6,8 @@ import Skills from './Skills';
 
 const About = () => {
     return (
-        <section id='about' className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto flex flex-col">
+        <section id='about'>
+            <div className="container px-5 py-20 mx-auto flex flex-col">
                 <div className="">
                     <SectionTitle>About me</SectionTitle>
                     <div className="flex flex-col sm:flex-row mt-10">

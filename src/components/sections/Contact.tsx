@@ -3,7 +3,7 @@ import SectionTitle from '../utills/SectionTitle';
 
 const Contact = () => {
   return (
-    <section id='contact' className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
+    <section id='contact' className="relative z-10 overflow-hidden bg-white pb-20">
       <div className="container mx-auto px-5">
         <div className="-mx-4 flex flex-wrap lg:justify-between">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
