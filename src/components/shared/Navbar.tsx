@@ -1,15 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowDownTrayIcon, Bars3BottomRightIcon, BeakerIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link';
 import { AiFillGithub } from 'react-icons/ai';
 
 const Navbar = () => {
     const menus = ["home", "about", "services", "portfolio", "contact"];
-    const [openDropdown, setOpenDropdown] = React.useState(false);
-    const [collapsMenu, setCollapsMenu] = React.useState(false);
-    const [portfolios, setPortfolios] = React.useState([]);
+    const [openDropdown, setOpenDropdown] = useState(false);
+    const [collapsMenu, setCollapsMenu] = useState(false);
+    const [portfolios, setPortfolios] = useState([]);
+    const [isSticky, setSticky] = useState(false);
 
-    React.useEffect(() => {
+    const handleScroll = () => {
+        if (window.pageYOffset > 50) {
+            setSticky(true);
+        } else {
+            setSticky(false);
+        }
+    };
+
+    const stickyNav = {
+        background: 'white',
+        boxShadow: '1px 1px 5px #00000036'
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
         fetch('portfolio.json')
             .then(response => response.json())
             .then(data => setPortfolios(data));
@@ -24,7 +45,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="z-50 w-full flex flex-wrap items-center justify-between px-2 py-1 navbar-expand-lg absolute">
+        <nav style={isSticky? stickyNav: {}} className="z-50 bg-white lg:bg-transparent w-full flex flex-wrap items-center justify-between px-2 py-1 navbar-expand-lg fixed">
             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                 <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start ">
                     <Link href="/">
@@ -62,7 +83,7 @@ const Navbar = () => {
                             </div>
                         </li>
                         <li className="flex items-center">
-                            <Link className="lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="">
+                            <Link className="lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://github.com/mahian" target="_blank">
                                 <AiFillGithub className='h-5 w-5' />
                                 <span className="lg:hidden inline-block ml-2">Github</span>
                             </Link>
