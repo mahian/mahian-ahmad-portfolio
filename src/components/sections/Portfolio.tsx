@@ -35,7 +35,7 @@ const Portfolio = () => {
               const { thumbnail, name, subtitle, liveLink } = portfolio;
               return (
                 <article key={index} className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
-                  <Link href={liveLink}>
+                  <Link href={liveLink} target="_blank">
                     <div className="relative flex overflow-hidden h-40 rounded-xl">
                       <img className='w-full object-cover' src={thumbnail} alt="portfolio_thumbnail" />
                     </div>
