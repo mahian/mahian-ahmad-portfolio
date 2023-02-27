@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
                 <div className="relative px-4 xl:px-0 container mx-auto md:flex items-center gap-8">
                     <div className="text-color w-full md:w-1/2 pt-16 lg:pt-32 xl:pt-12">
-                        <h1 className="text-4xl md:text-4xl lg:text-6xl w-11/12 lg:w-11/12 xl:w-full xl:text-6xl text-gray-900 font-extrabold f-f-l">I am Mahian</h1>
+                        <h1 className="text-6xl mt-10 md:mt-0 w-11/12 lg:w-11/12 xl:w-full xl:text-6xl text-gray-900 font-extrabold f-f-l">I am Mahian</h1>
                         <p className="text-2xl w-11/12 lg:w-11/12 xl:w-full mt-3 text-gray-600 font-semibold">Front End Developer</p>
                         <div className="f-f-r text-base lg:text-base pb-20 sm:pb-0 pt-10 xl:pt-6">
                             <h2>The next big thing starts here. Start building with Prodify and be the first to market with a product that is ready to take on the competition and delight your customers</h2>
