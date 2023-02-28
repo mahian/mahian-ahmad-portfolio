@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionTitle from '../utills/SectionTitle';
 import {MdDevices, MdDesignServices, MdAccessibility} from 'react-icons/md';
 import {TbBrowserCheck} from 'react-icons/tb';
@@ -6,6 +6,7 @@ import {HiWrenchScrewdriver} from 'react-icons/hi2';
 import {FaCode} from 'react-icons/fa';
 
 const Services = () => {
+    const [fullDescription, setFullDescription] = useState(false);
     const servicesData = [
         {
             title: "Website Design",
@@ -38,6 +39,9 @@ const Services = () => {
             icon: <HiWrenchScrewdriver className='h-16 w-16' />
         },
     ]
+    const expandDescription = ()=>{
+        setFullDescription(true);
+    }
     return (
         <section id='services'>
             <div className="container px-5 pb-20 mx-auto">
@@ -47,11 +51,11 @@ const Services = () => {
                         const { title, desc, icon } = service;
                         return (
                             <div key={index} className="xl:w-1/3 md:w-1/2 p-4 cursor-pointer">
-                                <div className="bg-white group hover:bg-primary hover:text-white shadow-md p-6 rounded-lg">
+                                <div className="bg-white group transition hover:bg-primary hover:text-white shadow-md p-6 rounded-lg">
                                     <div className='text-primary group-hover:text-white'>{icon}</div>
                                     <h2 className="text-2xl text-gray-900 group-hover:text-white font-medium title-font mb-2">{title}</h2>
-                                    <p className="leading-relaxed text-base">{desc.length > 150 ? desc.slice(0, 150) : desc }
-                                    <button className='text-yellow-500 ml-1 hover:underline'>Show more</button>
+                                    <p className="leading-relaxed text-base">{desc.length > 150 ? desc.slice(0, 150)+ "..." : desc }
+                                    <button onClick={expandDescription} className='text-yellow-500 ml-1 hover:underline'>Show more</button>
                                     </p>
                                 </div>
                             </div>

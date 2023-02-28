@@ -60,7 +60,7 @@ const Navbar = () => {
                         {
                             menus.map((menu, index) => (
                                 <li key={index} className="flex items-center">
-                                    <Link className=" lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href={`#${menu}`}><i className="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2"></i> {menu}</Link>
+                                    <Link className=" hover:text-primary px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href={`#${menu}`}><i className="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2"></i> {menu}</Link>
                                 </li>
                             ))
                         }
@@ -68,13 +68,13 @@ const Navbar = () => {
                     </ul>
                     <ul className="flex flex-col lg:flex-row list-none lg:ml-auto items-center">
                         <li className="inline-block relative">
-                            <button onClick={openDemo} className="lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                            <button onClick={openDemo} className="hover:text-primary px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
                                 Demo Pages
                             </button>
-                            <div className={`${openDropdown ? 'block' : 'hidden'} bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 absolute`} id="demo-pages-dropdown">
+                            <div className={`${openDropdown ? 'block' : 'hidden'} bg-white text-base z-50 float-left list-none text-left rounded shadow-lg min-w-48 absolute`} id="demo-pages-dropdown">
                                 {
                                     portfolios.map((demo: any, index) => (
-                                        <Link key={index} href={demo.liveLink} className="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                        <Link key={index} href={demo.liveLink} target="_blank" className="hover:bg-gray-100 text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
                                             {demo.name}
                                         </Link>
                                     ))

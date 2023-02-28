@@ -43,7 +43,7 @@ const Portfolio = () => {
                       <h2 className="text-slate-700 font-bold text-2xl">{name}</h2>
                       <div className="mt-3 flex items-center justify-between">
                         <p className="mt-1 text-sm text-slate-500">{subtitle}</p>
-                        <Link href={liveLink}>
+                        <Link href={liveLink} target="_blank">
                           <div className="h-10 w-10 flex items-center justify-center rounded-full border border-primary hover:bg-primary text-primary hover:text-white duration-100">
                             <ArrowRightIcon className='h-5'/>
                           </div>
