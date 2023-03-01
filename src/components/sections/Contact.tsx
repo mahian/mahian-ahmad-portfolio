@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from '../utills/SectionTitle';
 import {MdLocationOn, MdPhone, MdEmail} from 'react-icons/md';
+import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -31,7 +32,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full">
                   <h4 className="text-dark mb-1 text-xl font-bold">Phone Number</h4>
-                  <p className="text-body-color text-base">(+880)1706 988476</p>
+                  <Link href="tel:+880 1706-988476" className='hover:underline'><p className="text-body-color text-base">(+880)1706 988476</p></Link>
                 </div>
               </div>
               <div className="mb-8 flex w-full max-w-[370px]">
@@ -42,24 +43,26 @@ const Contact = () => {
                 </div>
                 <div className="w-full">
                   <h4 className="text-dark mb-1 text-xl font-bold">Email Address</h4>
-                  <p className="text-body-color text-base">mahianahmad9@gmail.com</p>
+                  <Link href="mailto:mahianahmad9@gmail.com" className='hover:underline'><p className="text-body-color text-base">mahianahmad9@gmail.com</p></Link>
                 </div>
               </div>
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div className="relative rounded-lg bg-white p-8 shadow-xl sm:p-12">
-              <form>
+              <form action='https://formspree.io/f/mzbqggdq' method='POST'>
                 <div className="mb-6">
                   <input
                     type="text"
                     placeholder="Your Name"
+                    name="name"
                     className="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                   />
                 </div>
                 <div className="mb-6">
                   <input
                     type="email"
+                    name="email"
                     placeholder="Your Email"
                     className="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                   />
@@ -68,6 +71,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Your Phone"
+                    name="phone"
                     className="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                   />
                 </div>
@@ -75,6 +79,7 @@ const Contact = () => {
                   <textarea
                     rows={6}
                     placeholder="Your Message"
+                    name="message"
                     className="text-body-color border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                   ></textarea>
                 </div>
