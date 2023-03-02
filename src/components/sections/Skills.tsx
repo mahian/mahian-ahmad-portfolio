@@ -34,10 +34,22 @@ const Skills = () => {
             logo: "assets/skills/css.png"
         },
         {
+            name: "Js",
+            level: "Intermediate",
+            experience: "2 year",
+            logo: "assets/skills/js.png"
+        },
+        {
             name: "Tailwind",
             level: "Expert",
             experience: "2 year",
             logo: "assets/skills/tailwind.png"
+        },
+        {
+            name: "Bootstrap",
+            level: "Expert",
+            experience: "2 year",
+            logo: "assets/skills/bootstrap.png"
         },
     ]
     return (
