@@ -1,4 +1,4 @@
-import Meta from "@/components/Meta";
+import Meta from "@/components/utills/Meta";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
