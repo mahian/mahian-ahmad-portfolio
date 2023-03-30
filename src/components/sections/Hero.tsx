@@ -16,7 +16,7 @@ const Hero = () => {
                         <h1 className="text-6xl mt-10 md:mt-0 w-11/12 lg:w-11/12 xl:w-full xl:text-6xl text-gray-900 font-extrabold f-f-l uppercase">I am <span className="text-primary">Mahian</span></h1>
                         <p className="text-2xl w-11/12 lg:w-11/12 xl:w-full mt-3 text-gray-600 font-semibold">Front End Developer</p>
                         <div className="f-f-r text-base lg:text-base pt-10 xl:pt-6">
-                            <h2>The next big thing starts here. Start building with Prodify and be the first to market with a product that is ready to take on the competition and delight your customers</h2>
+                            <h2>I’m a front end Developer, I love building applications that challenge me as a developer, as it forces me outside my comfort zone where the real learning begins! An adaptable and self-motivated learner with an interest in new programming technologies and self-improvement</h2>
                         </div>
                         <img className="w-full md:hidden mt-10 object-fill md:w-2/3 rounded-lg" src="assets/images/hero.webp" alt="sample page" role="img" />
                         <div className="lg:flex">
